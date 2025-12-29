@@ -31,3 +31,11 @@ def fav_foods():
   return render_template('favorite_foods.html',
                          title=title,
                          foods=foods)
+
+@app.route('/favorite/movies')
+def fav_movies():
+  title = 'Favorite Movies Page'
+  movie = ['Avengers','Titanic','Transformers','The Witcher','Game of Thrones']
+  return render_template('favorite_movies.html',
+                         title=title,
+                         movie=movie)
